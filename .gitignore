@@ -1,0 +1,7 @@
+__pycache__/
+
+*.whl
+cache
+figs/
+
+.vscode

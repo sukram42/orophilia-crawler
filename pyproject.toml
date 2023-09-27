@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "orophilia-crawler"
+version = "0.1.0"
+description = ""
+authors = ["Markus Böbel <markus.boebel@tum.de>"]
+readme = "README.md"
+packages = [{include = "orophilia_crawler"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+supabase = "^1.0.4"
+pydantic = "^2.1.1"
+overpass = "^0.7"
+requests = "^2.31.0"
+tdqm = "^0.0.1"
+jinja2 = "^3.1.2"
+osmnx = "^1.6.0"
+matplotlib = "^3.7.2"
+scikit-learn = "^1.3.0"
+tqdm = "^4.66.1"
+click = "^8.1.7"
+loguru = "^0.7.0"
+pydantic-settings = "^2.0.3"
+pytest = "^7.4.0"
+geopy = "^2.4.0"
+rasterio = "^1.3.8"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

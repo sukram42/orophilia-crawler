@@ -1,0 +1,9 @@
+[out:json][timeout:25];
+// gather results
+(
+  relation["region:type"="mountain_area"]["name"!="Alps"](47.10568031482, 10.486450195312,47.868459093343,13.625793457031);
+);
+// print results
+out body;
+>;
+out skel qt;
