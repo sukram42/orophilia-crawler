@@ -16,7 +16,7 @@ mountain_id = 1617915343 # Mittlere ödkarspitze
 
 
 url: str = "https://ntcmlxdemillsrdjybpc.supabase.co"
-key: str = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im50Y21seGRlbWlsbHNyZGp5YnBjIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY5MjA0MDgzMCwiZXhwIjoyMDA3NjE2ODMwfQ.yTQhbzzibLoXORx8sbdb35nl_lWRp0wxHgA3o8IoIPQ"
+key: str = ""
 
 supabase: Client = create_client(url, key)
 data = supabase.table("mountains").select("*").eq("id", mountain_id).execute()
